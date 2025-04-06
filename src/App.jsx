@@ -39,7 +39,7 @@ export const App = () => {
   const fetchWeather = async (query) => {
     try {
       const response = await fetch(
-        `http://api.weatherapi.com/v1/forecast.json?key=5990decd0fce447d85d134026232008&q=${query}&days=5`
+        `https://api.weatherapi.com/v1/forecast.json?key=5990decd0fce447d85d134026232008&q=${query}&days=5`
       );
       const data = await response.json();
 
